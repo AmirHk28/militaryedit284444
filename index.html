@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مرجع جنگنده‌های مدرن</title>
+<style>
+:root{--bg:#0d0d0d;--text:#f2f2f2;--gray:#bfbfbf;}
+body{margin:0;font-family:sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+header{background:linear-gradient(90deg,#111,#222);display:flex;align-items:center;justify-content:space-between;padding:10px 20px;box-shadow:0 4px 10px rgba(0,0,0,0.5);}
+.logo img{height:60px;border-radius:8px;}
+nav a{color:var(--gray);text-decoration:none;margin-left:16px;transition:0.3s;}
+nav a:hover{color:var(--text);}
+.hero{text-align:center;background:url('https://upload.wikimedia.org/wikipedia/commons/7/77/RAF_F-35B_integration_flying_training_with_USAF_B-2_30092019_-_4.jpg') center/cover;height:60vh;display:flex;align-items:center;justify-content:center;color:white;}
+.hero h1{background:rgba(0,0,0,0.6);padding:20px 40px;border-radius:10px;font-size:2rem;}
+section{padding:40px 20px;max-width:1100px;margin:auto;}
+h2{border-right:4px solid var(--gray);padding-right:8px;}
+.articles,.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px;}
+.article{background:#1a1a1a;padding:16px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.4);word-break:break-word;position:relative;cursor:pointer;}
+.article img,.gallery img{width:100%;border-radius:10px;cursor:pointer;transition:transform 0.3s ease;}
+.article img:hover,.gallery img:hover{transform:scale(1.05);}
+.article h3{margin:0 0 8px;}
+.article p{color:var(--gray);}
+.delete-btn{position:absolute;top:8px;right:8px;background:red;color:white;border:none;padding:4px 8px;border-radius:4px;cursor:pointer;font-size:0.8rem;}
+.delete-btn:hover{background:darkred;}
+footer{background:#111;text-align:center;color:var(--gray);padding:20px;margin-top:40px;}
+input,textarea{width:100%;margin-top:8px;padding:10px;border-radius:8px;border:none;background:#2a2a2a;color:white;}
+button{background:#333;color:white;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;margin-top:8px;}
+button:hover{background:#444;}
+.admin-login{background:#1a1a1a;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.4);margin-bottom:20px;}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo"><img src="https://i0.wp.com/www.flyajetfighter.com/wp-content/uploads/2025/05/aerodynamique-avion-de-chasse.jpg?ssl=1" alt="لوگوی جنگنده"></div>
+<nav>
+<a href="#home">خانه</a>
+<a href="#gallery">گالری</a>
+<a href="#articles">مقالات</a>
+<a href="#about">درباره ما</a>
+</nav>
+</header>
+
+<section class="hero" id="home"><h1>مرجع جنگنده‌های مدرن دنیا</h1></section>
+
+<section id="gallery">
+<h2>گالری تصاویر</h2>
+<div class="gallery">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/F22_Training_Formation.jpg" alt="F-22 Raptor">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/RAF_F-35B_integration_flying_training_with_USAF_B-2_30092019_-_4.jpg" alt="F-35 Lightning II">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Chengdu_J-20_front_view.jpg" alt="J-20">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/SOH-57_mockup.jpg" alt="SOH-57">
+</div>
+</section>
+
+<section id="articles">
+<h2>مقالات</h2>
+<div class="articles" id="articles-container">
+<!-- خلاصه مقاله‌ها -->
+<div class="article" data-file="f22.html">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/F22_Training_Formation.jpg" alt="F-22 Raptor">
+<h3>F-22 Raptor</h3>
+<p>F-22 Raptor یکی از پیشرفته‌ترین جنگنده‌های نسل پنجم جهان است که برای برتری هوایی طراحی شده و توانایی حمل طیف وسیعی از تسلیحات هوا به هوا و هوا به زمین را دارد...</p>
+</div>
+<div class="article" data-file="f35.html">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/RAF_F-35B_integration_flying_training_with_USAF_B-2_30092019_-_4.jpg" alt="F-35 Lightning II">
+<h3>F-35 Lightning II</h3>
+<p>F-35 یک جنگنده چندمنظوره نسل پنجم با فناوری استلت و قابلیت عملیات در محیط‌های هوایی و زمینی است...</p>
+</div>
+<div class="article" data-file="j20.html">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Chengdu_J-20_front_view.jpg" alt="J-20">
+<h3>J-20 Mighty Dragon</h3>
+<p>J-20 یک جنگنده نسل پنجم چینی با فناوری استلت و مأموریت‌های برتری هوایی و حمله دقیق است...</p>
+</div>
+<div class="article" data-file="soh57.html">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/SOH-57_mockup.jpg" alt="SOH-57">
+<h3>SOH-57</h3>
+<p>SOH-57 یک جنگنده پیشرفته با قابلیت استلت و مأموریت‌های چندمنظوره است که توانایی مقابله با تهدیدهای هوایی و زمینی را دارد...</p>
+</div>
+</div>
+
+<div class="admin-login">
+<h3>ورود ادمین</h3>
+<input type="password" id="admin-pass" placeholder="رمز عبور ادمین">
+<button id="login-btn">ورود</button>
+<p id="login-msg" style="color:red;"></p>
+<div id="admin-panel" style="display:none;">
+<h3>مدیریت مقالات</h3>
+<p>اکنون می‌توانید مقالات را حذف یا ویرایش کنید.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2>درباره ما</h2>
+<div class="about"><p>ما مرجعی برای معرفی و تحلیل جنگنده‌های مدرن در سراسر دنیا هستیم. هدف ارائه اطلاعات عمومی و فناوری درباره پرنده‌های نظامی است.</p></div>
+</section>
+
+<footer>© 2025 مرجع جنگنده‌های مدرن</footer>
+
+<script>
+const adminPass = "amirhk2816@";
+const loginBtn = document.getElementById('login-btn');
+const loginMsg = document.getElementById('login-msg');
+const adminPanel = document.getElementById('admin-panel');
+
+loginBtn.addEventListener('click', ()=>{
+  const val = document.getElementById('admin-pass').value;
+  if(val === adminPass){
+    loginMsg.textContent = "ورود موفقیت‌آمیز!";
+    adminPanel.style.display = "block";
+  } else {
+    loginMsg.textContent = "اگر درست هم وارد کنی نمی تونی مقاله قرار بدی مفتی زور نزن";
+    adminPanel.style.display = "none";
+  }
+});
+
+// باز کردن مقاله‌ها در پنجره دوم
+document.querySelectorAll('.article').forEach(article=>{
+  article.addEventListener('click', ()=>{
+    const file = article.dataset.file;
+    if(file) window.open(file,'_blank','width=900,height=700,scrollbars=yes');
+  });
+});
+</script>
+
+</body>
+</html>
